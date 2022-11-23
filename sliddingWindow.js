@@ -204,6 +204,6 @@
 //     let k = 312
 //     // console.log(Math.floor((8+5)/2), "ok");
 //     console.log(check(arr,k));
-
+// ------------------------------------------------------------ variable size window (sliding window)
 
 
