@@ -1,9 +1,12 @@
 // ====================== Map ====================
- //let arr = [2,5,6,2,3]   //length 05
+//  let arr = [2,5,6,2,3]   //length 05
 
-// let newArr = arr.map((e)=> e * 2)
+// let newArr = arr.map((e,i,arr)=>{ 
+//     console.log(i,arr);
+//     console.log(thisArg);
+//     return e + 2},thisArg)
 
-// console.log(newArr)  [ 4, 10, 12, 4, 6 ]
+// console.log(newArr)  //[ 4, 10, 12, 4, 6 ]
 // console.log(arr)    // [ 2, 5, 6, 2, 3 ]
 
 // ===================== Filter ===================
@@ -11,17 +14,21 @@
 
 // //let newArr = arr.filter((e)=> e < 10 && e > 4)  //[ 6 ]   // length reduce using filter
 
-// let newArr1 = arr.filter(function (e){
+// let newArr1 = arr.filter(function (e,i,arr){
+//     console.log(i,arr);
 //     return e <= 10 && e >= 4             
 // })
-// console.log(newArr1) [ 4, 10, 4, 6 ]
-// console.log(arr)  [ 4, 10, 12, 4, 6 ]
+// console.log(newArr1) //[ 4, 10, 4, 6 ]
+// console.log(arr)  //[ 4, 10, 12, 4, 6 ]
 
 // =================== some =======================
 
 // let arr = [2,5,6,2,3]   
 
-// let newArr = arr.some((e)=> e == 11)    //return type Boolean
+// let newArr = arr.some((e,i,arr)=>{ 
+//     console.log(i,arr);
+//    return e > 11
+// })    //return type Boolean
 
 // console.log(newArr)  // false     if any condition match its return true
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
@@ -30,7 +37,9 @@
 
 // let arr = [2,5,6,2,3]   
 
-// let newArr = arr.every((e)=> e >= 2)    //return type Boolean
+// let newArr = arr.every((e,i,arr)=>{ 
+//     console.log(i,arr);
+//     return e >= 2})    //return type Boolean
 
 // console.log(newArr)  // true     if each every condition match its will be retrun true
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
@@ -50,41 +59,44 @@
 
 // let arr = [2,5,6,2,3]   
 
-// let newArr = arr.findIndex((e)=> e > 10)   
+// let newArr = arr.findIndex((e)=> e > 1)   
 
 // console.log(newArr) // 1    its return only Index of given condition if no condition match its return -1
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
 // ========================sort===================================
 
-// let arr = ["a","z","o","p"]   
+// let arr = ["azf","zbhgewj","owdhbjhb","pjxwq"] 
 
-// arr.sort((a,b)=> a-b)   //[ 2, 2, 3, 5, 6 ]
-// arr.sort((a,b)=> b-a)         // its not create copy its change the main array
 
-// arr.sort((a, b) => (a < b ? -1 : 1))  //[ 'z', 'p', 'o', 'a' ] 
-// arr.sort().reverse() //[ 'z', 'p', 'o', 'a' ]
+// arr.sort((a,b)=> a-b)
+// console.log(arr)      //[ 2, 2, 3, 5, 6 ]
+// arr.sort((a,b)=> b-a) 
+// console.log(arr)           // its not create copy its change the main array
 
-// console.log(newArr1) 
-//console.log(arr)   //[ 2, 5, 6, 2, 3 ]
+// // arr.sort((a, b) => (a < b ? -1 : 1))  //[ 'z', 'p', 'o', 'a' ] 
+// // arr.sort().reverse() //[ 'z', 'p', 'o', 'a' ]
+
+// // // console.log(newArr1) 
+// // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
 // ============================ ForEach ========================
 // let arr = [ 2, 5, 6, 2, 3 ]
-// let newArr = arr.forEach((e,i, arr)=>   console.log(e,i,arr,"Rahul Bro"), 
-//         //    console.log(arr),console.log("Rahul Bro")
+// let newArr = arr.forEach((e,i, arr)=> {  console.log(e*2,i,arr),console.log(e)}
+         
 // )
 // console.log(newArr)
 
 // ====================== reduce ======================
-const array1 = [1, 2, 3, 4];
+// const array1 = [1, 2, 3, 4];
 
-// 0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-const sumWithInitial = array1.reduce(
-  (previousValue, currentValue) => { console.log(previousValue,currentValue)
-    return (previousValue + currentValue)
-  },
-  initialValue
-);
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 1;
+// const sumWithInitial = array1.reduce(
+//   (previousValue, currentValue) => { console.log(previousValue,currentValue)
+//     return (previousValue * currentValue)
+//   },
+//   initialValue
+// );
 
-console.log(sumWithInitial,array1);
+// console.log(sumWithInitial,array1);
