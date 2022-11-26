@@ -53,9 +53,19 @@
 
 //=========================== includes
 
-let arr = [1,2,4,8,9]
-let res = arr.includes(1)   // return type boolean true/false
-console.log(arr,res)        //[ 1, 2, 4, 8, 9 ] true
+// let arr = [1,2,4,8,9]
+// let res = arr.includes(1)   // return type boolean true/false
+// console.log(arr,res)        //[ 1, 2, 4, 8, 9 ] true
+
+//============================ splice() => o(N)
+
+// const names = ['Luis','John','Jose','Aaron'];
+// console.log(names.splice(0,0,"Fernando")); // Add Michelle
+// console.log(names.splice(0,1,"Michelle")); // replace Fernando to Michelle
+// console.log(names.splice(0,1)); // remove Michelle
+// console.log(names);
+
+
 
 
 
