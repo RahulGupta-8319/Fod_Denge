@@ -1,4 +1,4 @@
-// string method 
+//**************   string method  ********************************************** 
 
 //-----------------------SLICE
 // create a copy 
@@ -33,7 +33,7 @@
 // console.log(str , x);   // abcdefghi abcdefghi
 
 // let x = str.substring( 2, -2 )
-// console.log(str , x);   //abcdefghi cdefg
+// console.log(str , x);   //abcdefghi ab
 
 // const text = 'Mozilla';
 // console.log(text.substring(5, 2)); // "zil"  // substring switch start and end value if s>e
@@ -96,6 +96,9 @@
 // let x= str.split('')
 // console.log(str,x);   //abcdefg ['a', 'b', 'c','d', 'e', 'f','g']
 
+// let x= str.split('-')
+// console.log(str,x);      // abcd$efg [ 'abcd$efg' ]
+
 // let x= str.split('d')
 // console.log(str,x);   //abcd$efg [ 'abc', '$efg' ]
 
@@ -129,9 +132,9 @@
 
 //---------------------------- include
 
-// let str = 'abba 0bc'
+// let str = 'abba0bc'
 
-// let x= str.includes('z')  // check char present or not  return true/false
+// let x= str.includes('')  // check char present or not  return true/false
 // console.log(str,x);       // empty string => true
 
 //--------------------------- concat
@@ -139,18 +142,18 @@
 
 // let str = 'abba'
 
-// let x= str.concat('123gh'+'fg') // concate multiple str  return true/false
+// let x= str.concat('123gh'+'fg'+'dehba') // concate multiple str  create copy
 // console.log(str,x);    //abba abba123ghfg   
 
 //----------------------------- trim
 
-let str = ' ab ba '
+// let str = ' ab ba '
 
-let x = str.trim()   //"ab ba" // trime start and end space
-let y = str.trimStart() //"ab ba "     // trime start space 
-let z = str.trimEnd()   //" ab ba"     // trim end space
+// let x = str.trim()   //"ab ba" // trime start and end space  *create copy*
+// let y = str.trimStart() //"ab ba "     // trime start space 
+// let z = str.trimEnd()   //" ab ba"     // trim end space
 
-console.log( z.length);
+// console.log(str.length, x.length);
 
 
 
