@@ -1,6 +1,6 @@
 //**************   string method  ********************************************** 
 
-//-----------------------SLICE
+//-----------------------SLICE      TC = O(N)
 // create a copy 
 
 // let str = "abcdefghi"
@@ -19,7 +19,7 @@
 
 // console.log(str.slice(-5, 2));  //""
 // console.log(str.slice(-5, -2));     // efg
-//------------------------------ substring 
+//------------------------------ substring  TC = O(N)
 
 // let str = "abcdefghi"
 
@@ -42,7 +42,7 @@
 // console.log(text.substring(-5, 2)); // "Mo"  // substring take -ive no. as a "0"
 // console.log(text.substring(-5, -2)); // ""
 
-//----------------------------- replace
+//----------------------------- replace  TC = O(N)
 
 // let str = "abcdefghi"
 
@@ -56,7 +56,7 @@
 //  let x = str.replace("zz" , "tgh")
 //  console.log(str , x);   //abcdefghi abcdefghi
 
-//---------------------------------- touppercase
+//---------------------------------- touppercase   TC = O(N)
 
 // let str = "abcdefghi"
  
@@ -64,7 +64,7 @@
 
 // console.log(str,x);  //abcdefghi ABCDEFGHI
 
-//---------------------------------- tolowercase
+//---------------------------------- tolowercase   TC = O(N)
 
 // let str = "AVCDGBH123"
  
@@ -72,7 +72,7 @@
 
 // console.log(str,x);  //AVCDGBH123 avcdgbh123
 
-//------------------------- charAt
+//------------------------- charAt         TC = O(N)
 
 // let str = "AVCDGBH123"
  
@@ -80,7 +80,7 @@
 
 // console.log(str,x);   //AVCDGBH123 C // only 1 data return (2,3) => c
 
-//---------------------- charCodeAt
+//---------------------- charCodeAt      TC = O(N)
 
 // it take index value return asciii value like a = 97, A=65
 
@@ -89,7 +89,7 @@
 // let x = str.charCodeAt(0)
 // console.log(str,x); //ABab 65
 
-//-------------------------------- split
+//-------------------------------- split   TC = O(N)
 
 // let str = 'abcd$efg'
 
@@ -102,14 +102,14 @@
 // let x= str.split('d')
 // console.log(str,x);   //abcd$efg [ 'abc', '$efg' ]
 
-//------------------------------- indexOf
+//------------------------------- indexOf    TC = O(N)
 
 // let str = 'abba'
 
 // let x= str.indexOf("a")
 // console.log(str,x);   // it return index value from start if not present return => -1   [0]
 
-//--------------------------------- lastIndexOf
+//--------------------------------- lastIndexOf    TC = O(N)
 
 // let str = 'abba'
 
@@ -137,7 +137,7 @@
 // let x= str.includes('')  // check char present or not  return true/false
 // console.log(str,x);       // empty string => true
 
-//--------------------------- concat
+//--------------------------- concat   TC = O(N)
 
 
 // let str = 'abba'

@@ -1,4 +1,4 @@
-// ====================== Map ====================
+// ====================== Map ====================    TC = O(N)
 //  let arr = [2,5,6,2,3]   //length 05
 
 // let newArr = arr.map((e,i,arr)=>{ 
@@ -9,7 +9,7 @@
 // console.log(newArr)  //[ 4, 10, 12, 4, 6 ]
 // console.log(arr)    // [ 2, 5, 6, 2, 3 ]
 
-// ===================== Filter ===================
+// ===================== Filter ===================    TC = O(N)
 // let arr = [ 4, 10, 12, 4, 6 ]   //length 05
 
 // //let newArr = arr.filter((e)=> e < 10 && e > 4)  //[ 6 ]   // length reduce using filter
@@ -21,7 +21,7 @@
 // console.log(newArr1) //[ 4, 10, 4, 6 ]
 // console.log(arr)  //[ 4, 10, 12, 4, 6 ]
 
-// =================== some =======================
+// =================== some =======================  TC = O(N)
 
 // let arr = [2,5,6,2,3]   
 
@@ -33,7 +33,7 @@
 // console.log(newArr)  // false     if any condition match its return true
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
-// ==================== every ===================
+// ==================== every ===================    TC = O(N)
 
 // let arr = [2,5,6,2,3]   
 
@@ -44,7 +44,7 @@
 // console.log(newArr)  // true     if each every condition match its will be retrun true
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
-// ============================ Find ===========================
+// ============================ Find ===========================  TC = O(N)
 
 // let arr = [2,5,6,2,3]   
 
@@ -55,7 +55,7 @@
 //                           // If no values satisfy the testing function, undefined is returned.
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
-// ===================== find Index =================================
+// ===================== find Index =================================  TC = O(N)
 
 // let arr = [2,5,6,2,3]   
 
@@ -64,7 +64,7 @@
 // console.log(newArr) // 1    its return only Index of given condition if no condition match its return -1
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
-// ========================sort===================================
+// ========================sort===================================  TC = O(N logN)
 
 // let arr = ["azf","zbhgewj","owdhbjhb","pjxwq"] 
 
@@ -80,14 +80,14 @@
 // // // console.log(newArr1) 
 // // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
-// ============================ ForEach ========================
+// ============================ ForEach ========================   TC = O(N)
 // let arr = [ 2, 5, 6, 2, 3 ]
 // let newArr = arr.forEach((e,i, arr)=> {  console.log(e*2,i,arr),console.log(e)}
          
 // )
 // console.log(newArr)
 
-// ====================== reduce ======================
+// ====================== reduce ======================     TC = O(N)
 // const array1 = [1, 2, 3, 4];
 
 // // 0 + 1 + 2 + 3 + 4
