@@ -11,7 +11,7 @@
 // let res = arr.pop()   //return last index and decrease the length of array
 // console.log(arr,res)  // [ 1, 2, 4, 8 ] 9
 
-// ========================= push
+// ========================= push    
 
 // let arr = [1,2,4,8,9]
 // let res = arr.push(8,9,5,4,-8,0)   //insert the new element inside the array and increase the length of the array 
