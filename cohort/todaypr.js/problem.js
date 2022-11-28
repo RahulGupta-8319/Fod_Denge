@@ -13,7 +13,8 @@
 // 12. reverse a string by using recursion
 // 13. check weather a string is a pallindrom or not 
 // 14 . flatten an array element 
-
 // 17. sort the element in object 
 // 18 . write a function to check element in integer or not
 // 19 draw a pattern
+
+//------------------------------------
