@@ -83,18 +83,18 @@
 
 //--------------------------------  flatten Array
 
-// let arr = [1,2,3,[4,[5,6]]]
+let arr = [1,2,3,[4,[5,6]]]
 
-// console.log(flattenArr(arr));
+console.log(flattenArr(arr));
 
-// function flattenArr(arr) {
-//     let res = []
-//     for (let i = 0; i < arr.length; i++) {
-//         if(Array.isArray(arr[i])  == false){
-//             res.push(arr[i])
-//         }else{
-//              res = res.concat(flattenArr( arr[i] ))
-//         }
-//     }  
-//     return res 
-// }
+function flattenArr(arr) {
+    let res = []
+    for (let i = 0; i < arr.length; i++) {
+        if(Array.isArray(arr[i])  == false){
+            res.push(arr[i])
+        }else{
+             res = res.concat(flattenArr( arr[i] ))
+        }
+    }  
+    return res 
+}
