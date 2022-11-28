@@ -142,7 +142,7 @@
 
 // let str = 'abba'
 
-// let x= str.concat('123gh'+'fg'+'dehba') // concate multiple str  create copy
+// let x= str.concat('123gh'+'fg'+'dehba') // concate multiple str  => create copy
 // console.log(str,x);    //abba abba123ghfg   
 
 //----------------------------- trim
