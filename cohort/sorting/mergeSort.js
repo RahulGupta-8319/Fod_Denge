@@ -22,7 +22,7 @@ function concquer(arr, s ,mid, e){
     for (let i = 0; i < lenLeftArr; i++) {
         leftArr[i] = arr[s+i]     
     }
-    for (let i = 0; i < rightArr; i++) {
+    for (let i = 0; i < lenRightArr; i++) {
         rightArr[i] = arr[mid+1+i]     
     }
 
