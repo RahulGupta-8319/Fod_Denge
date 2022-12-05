@@ -1,5 +1,21 @@
 //================================ Recursion
 
+
+//------------------- printN
+// let n = 5
+
+// printN(n)
+// function printN(n){
+//     //base 
+//     if(n==0) return 
+
+//     //recusrcive
+//     printN(n-1)
+//     console.log(n)
+// }
+
+//-------------------- nSum
+
 // let n = 5
 
 // console.log(nSum(n));
@@ -8,7 +24,7 @@
 //     if(n==0) return ""
 
 //     //recursive
-//     return n+nSum(n-1)
+//     return n+nSum(n-1)   //5+4+3+2+1+""
 // }
 
 //-------------------------------- factorial
@@ -69,13 +85,13 @@
 
 //---------------------------------  IsPalindrome
 
-// let str = 'hi'
+// let str = 'madam'
 
 // console.log(isPalindrom(str));
 
 // function isPalindrom(str){
 //     //base
-//     if(str.length == 1) return true
+//     if(str.length <= 1) return true
 
 //     //recursive
 //     return (str[0] == str[str.length-1]) && isPalindrom(str.slice(1,-1))
@@ -83,18 +99,23 @@
 
 //--------------------------------  flatten Array
 
-let arr = [1,2,3,[4,[5,6]]]
+// let arr = [1,2,3,[4,[5,6]]]  //[1,2,3,4,5,6]
 
-console.log(flattenArr(arr));
+// console.log(flattenArr(arr));
 
-function flattenArr(arr) {
-    let res = []
-    for (let i = 0; i < arr.length; i++) {
-        if(Array.isArray(arr[i])  == false){
-            res.push(arr[i])
-        }else{
-             res = res.concat(flattenArr( arr[i] ))
-        }
-    }  
-    return res 
-}
+// function flattenArr(arr) {
+//     let res = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if(Array.isArray(arr[i])  == false){
+//             res.push(arr[i])
+//         }else{
+//              res = res.concat(flattenArr( arr[i] ))
+//         }
+//     }  
+//     return res 
+// }
+
+// let a = [1,2,3,]
+// let b = [45, 46]
+// let res = a.concat(b)
+// console.log(res,a,b);
