@@ -1,4 +1,4 @@
-Mozilla';
+//Mozilla';
 // console.log(text.substring(5, 2)); // "zil"  // substring switch start and end value if s>e
 // console.log(text.slice(5, 2)); // ""
 
