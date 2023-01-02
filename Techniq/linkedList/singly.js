@@ -35,7 +35,7 @@ class LinkedList{
       curr.next = node
     }
     this.size++
-    console.log(this.size);
+   // console.log(this.size);
   }
 
   insertInFront(element){
@@ -137,8 +137,25 @@ class LinkedList{
 
   //return index of the given element
 
-  
+  indexOf(ele){
+    let count=0
+    let curr=this.head
+    while(curr!=null){
+      if(curr.element===ele){
+        return count
+      }else{
+        count++
+        curr=curr.next
+      }
+    } return -1
 
+  }
+  isEmpty(){
+    return this.size==0
+  }
+isSizeOfList(){
+  console.log(this.size)
+}
   print(){
 
     let curr = this.head
@@ -154,16 +171,18 @@ class LinkedList{
 let list = new LinkedList()
 
 list.add(10)  
-// list.add(20)  
-// list.add(30)
-// list.add(40)
+list.add(20)  
+list.add(30)
+list.add(40)
 // list.insertInFront(20)
 // list.insertAt(25, 2)
 // list.removeAt(3)
 
 // list.removeElement(25)
-
-list.print()
+//console.log(list.indexOf(20))
+//console.log(list.isEmpty())
+list.isSizeOfList()
+//list.print()
 
 
 console.log( list );
