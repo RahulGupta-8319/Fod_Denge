@@ -1,4 +1,4 @@
- //=============================== Binary Searching
+  //=============================== Binary Searching
 
 /* - always work in sorted array
    - 
