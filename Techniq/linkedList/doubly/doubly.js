@@ -61,16 +61,13 @@ class DoublyLinkedList{
         let curr = this.head
 
         while(curr){
-
             if(curr.data == prev){
                 new_node.next = curr.next
                 new_node.prev = curr
                 curr.next = new_node
                 new_node.next.prev = new_node
-
                 this.size++
-                break;
-                
+                break;             
             }else{
                 curr = curr.next
 
@@ -79,6 +76,24 @@ class DoublyLinkedList{
         }
         return -1
     }
+
+    reverse(){
+        let temp = null
+        let curr = this.head
+        
+        while(curr){
+            temp = curr.prev
+            curr.prev = curr.next
+            curr.next = temp
+            curr = curr.prev
+        }
+        if(temp != null){
+            // console.log(temp, curr);
+            this.head = temp.prev
+        }
+
+    }
+
 
     print(){
         let curr = this.head
@@ -101,6 +116,9 @@ list.addInEnd(50)
 
 list.addAfterGivenNode(20, 25)
 
+list.print()
+list.reverse()
+console.log('after reverse');
 list.print()
 
 
