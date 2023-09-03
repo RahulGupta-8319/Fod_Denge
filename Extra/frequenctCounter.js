@@ -42,6 +42,7 @@
 
 // let arr = [1, 2, 3, 3]
 // let square = [1, 4, 9,]
+
 // if (arr.length != square.length) console.log("no");
 
 // let arrMap = {}
@@ -98,5 +99,7 @@ const checkAnagram = function(str1,str2){
     return "aya aya kuch to aaya"
 }
 
-console.log( checkAnagram(str1,str2) )
+console.log( checkAnagram(str1,str2) )   
+
+
 

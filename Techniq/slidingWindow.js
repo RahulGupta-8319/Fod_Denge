@@ -46,6 +46,7 @@ function largestSum(str){
        res[str[e]] = 1
 
       len = Math.max(len, e-s+1)
+      console.log('len', len);
 
     }
     console.log(len);

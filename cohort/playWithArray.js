@@ -1,4 +1,4 @@
-// let arr = [1,2,3,4,3,2,6,54,35]
+let arr = [1,2,3,4,3,2,6,54,35]
 
 //insertion
 /*
@@ -16,7 +16,7 @@ arr.pop()
 arr.shift()
 arr.splice(2)
 let x = arr.slice(1,2)
-console.log(arr, x);     
+console.log(arr, x);      
  */
 
 //============================================
@@ -124,7 +124,7 @@ console.log(arr, x);
 let arr1=[1,3,4,]
 let arr2=[2,5,7,8]
 
-let arr = []
+// let arr = []
 
 let i=0
 let j=0
@@ -138,7 +138,7 @@ while(i<arr1.length && j<arr2.length){
     }else{
         arr[k] = arr2[j]
         k++
-        j++
+        j++ 
     }
 }
 while(i<arr1.length){
@@ -152,5 +152,5 @@ while(j<arr2.length){
     j++
 }
 
-console.log(arr);
+// console.log(arr);
 

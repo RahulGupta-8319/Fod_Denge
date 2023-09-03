@@ -1,0 +1,1 @@
+    if(startNum>endNum){

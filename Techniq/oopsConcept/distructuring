@@ -1,0 +1,29 @@
+// newsted array shallo copy
+
+// let arr = [1,2,[3,4,5]]
+// let newArr = [...arr]
+// arr[2][0] = 7
+
+// console.log(newArr);
+
+//===========================================
+//distructuring
+
+let obj ={
+    name:"jitu",
+    add:{
+        city:"ujjain",
+        pincode:473001
+    }
+
+}
+
+let {name,name , add ,add:{city, pincode}} = obj
+
+console.log(  city,pincode, add);
+
+let arr = [1,2,[3,4,5]]
+
+let [a,b,[c,d,e]] = arr
+
+console.log(a,b,c,d,e);

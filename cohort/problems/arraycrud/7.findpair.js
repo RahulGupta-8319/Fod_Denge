@@ -4,7 +4,7 @@ let arr = [1,5,6,1,0,1]
 let k = 6
 
 function findPairSum(arr, k){
-    let map = {}
+    let map = {} 
     let res = []
 
     for(let i=0; i<arr.length; i++){

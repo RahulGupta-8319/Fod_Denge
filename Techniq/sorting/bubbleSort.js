@@ -7,7 +7,7 @@ function bubble(arr,n){
 
     for (let i = 0; i < n; i++) {
         let flag = 0
-        for (let j = 0; j < n-1; j++) {
+        for (let j = 0; j < n-i; j++) {
             if(arr[j] > arr[j+1]){
                 //swap
                 arr[j] = arr[j] + arr[j+1]

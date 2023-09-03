@@ -2,7 +2,7 @@
 
 let arr = [2,5,4,7,1,56,99]
 
-// arr.sort((a,b) => a-b) // change main array
+// arr.sort((a,b) = a-b) // change main array
 
 
 const findMaxMin = (arr) =>{

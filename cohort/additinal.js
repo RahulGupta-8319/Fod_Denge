@@ -1,8 +1,12 @@
+let arr1=[1,3,4,]
+let arr2=[2,5,7,8]
 
-// let x = [1,2]
-// let y =  [3,4]
-// let c = x+y  // if add two array then convert into string 1,23,4
+//insertion
 
-let str = '12345'
-str[0] = 5
-console.log( str );
+console.log( reverse(arr1, arr2) );
+function reverse(arr1, arr2){
+
+  let x=  arr1.concat(arr2)
+    console.log(arr1, x);
+    // return arr
+}

@@ -115,7 +115,14 @@
 //     return res 
 // }
 
-// let a = [1,2,3,]
-// let b = [45, 46]
-// let res = a.concat(b)
-// console.log(res,a,b);
+let a = [1,2,3,]
+let b = [45, 46]
+let res = a.concat(b)
+console.log(res,a,b);
+
+
+// let str = 'hello'
+
+// let x = str.length
+
+// console.log(x);

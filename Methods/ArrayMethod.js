@@ -37,7 +37,7 @@
 
 // let arr = [5,1,2,4,8,9]
 // let res = arr.shift()   // its remove first element from main array return removing element
-// console.log(arr,res)
+// console.log(arr,res)     // [ 1, 2, 4, 8, 9 ] 5
 
 //=========================== unshift    TC = O(N)
 
@@ -59,14 +59,21 @@
 
 //============================ splice() => o(N)
 
-// const names = ['Luis','John','Jose','Aaron'];
+const names = ['Luis','John','Jose','Aaron'];
+let res = names.splice(2, 'done','nnkjkjn', 25)
+console.log(names, res,typeof names[3]);
 // console.log(names.splice(0,0,"Fernando")); // Add Michelle
 // console.log(names.splice(0,1,"Michelle")); // replace Fernando to Michelle
 // console.log(names.splice(0,1)); // remove Michelle
 // console.log(names);
 
+//=============================n slice
 
+// let arr = [1,2,3,4,5]
 
+// let res = arr.slice(1,3)
+
+// console.log(arr. res);  // undefined
 
 
 

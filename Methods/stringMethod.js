@@ -3,7 +3,8 @@
 //-----------------------SLICE      TC = O(N)
 // create a copy 
 
-// let str = "abcdefghi"
+let str = "abcdefghi"
+
 
 // let x = str.slice( 2 )
 // console.log(str , x);   //abcdefghi cdefghi
@@ -50,11 +51,11 @@
 // console.log(str , x);  //abcdefghi tghdefghi
 
 
-// let x = str.replace("" , "tgh")
-// console.log(str , x);    //abcdefghi tghabcdefghi
+// let y = str.replace("" , "tgh")
+// console.log(str , y);    //abcdefghi tghabcdefghi
 
-//  let x = str.replace("zz" , "tgh")
-//  console.log(str , x);   //abcdefghi abcdefghi
+//  let z = str.replace("zz" , "tgh")
+//  console.log(str , z);   //abcdefghi abcdefghi
 
 //---------------------------------- touppercase   TC = O(N)
 
@@ -76,7 +77,7 @@
 
 // let str = "AVCDGBH123"
  
-// let x = str.charAt(2)
+// let x = str.charAt(2,3)
 
 // console.log(str,x);   //AVCDGBH123 C // only 1 data return (2,3) => c
 
@@ -96,17 +97,17 @@
 // let x= str.split('')
 // console.log(str,x);   //abcdefg ['a', 'b', 'c','d', 'e', 'f','g']
 
-// let x= str.split('-')
-// console.log(str,x);      // abcd$efg [ 'abcd$efg' ]
+// let y= str.split('-')
+// console.log(str,y);      // abcd$efg [ 'abcd$efg' ]
 
-// let x= str.split('d')
-// console.log(str,x);   //abcd$efg [ 'abc', '$efg' ]
+// let z= str.split('d')
+// console.log(str,z);   //abcd$efg [ 'abc', '$efg' ]
 
 //------------------------------- indexOf    TC = O(N)
 
 // let str = 'abba'
 
-// let x= str.indexOf("a")
+// let x= str.indexOf("bn")
 // console.log(str,x);   // it return index value from start if not present return => -1   [0]
 
 //--------------------------------- lastIndexOf    TC = O(N)
@@ -121,7 +122,7 @@
 // let str = 'abba'
 
 // let x= str.startsWith('b')  // check char start with input condition return true/false
-// console.log(str,x); 
+// console.log(str,x);         // abba false
 
 //-------------------------------- endWith
 

@@ -18,4 +18,4 @@ let countPrimes = function(n) {
     return res.length
     
 };
-console.log(countPrimes(100000))
+console.log(countPrimes(10))

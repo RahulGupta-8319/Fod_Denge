@@ -3,8 +3,8 @@
 
 // let newArr = arr.map((e,i,arr)=>{ 
 //     console.log(i,arr);
-//     console.log(thisArg);
-//     return e + 2},thisArg)
+//     // console.log(thisArg);
+//     return e + 2})
 
 // console.log(newArr)  //[ 4, 10, 12, 4, 6 ]
 // console.log(arr)    // [ 2, 5, 6, 2, 3 ]
@@ -35,13 +35,13 @@
 
 // ==================== every ===================    TC = O(N)
 
-// let arr = [2,5,6,2,3]   
+// let arr = [2,5,6,2,1,3]   
 
 // let newArr = arr.every((e,i,arr)=>{ 
 //     console.log(i,arr);
 //     return e >= 2})    //return type Boolean
 
-// console.log(newArr)  // true     if each every condition match its will be retrun true
+// console.log(newArr)  // fale     if each every condition match its will be retrun true
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
 // ============================ Find ===========================  TC = O(N)
@@ -59,14 +59,14 @@
 
 // let arr = [2,5,6,2,3]   
 
-// let newArr = arr.findIndex((e)=> e > 1)   
+// let newArr = arr.findIndex((e)=> e > 2)   
 
 // console.log(newArr) // 1    its return only Index of given condition if no condition match its return -1
 // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
 // ========================sort===================================  TC = O(N logN)
 
-// let arr = ["azf","zbhgewj","owdhbjhb","pjxwq"] 
+// let arr = ["azf","zpbhgepwj","owdhbjhb","pjxwq"] 
 
 
 // arr.sort((a,b)=> a-b)
@@ -81,22 +81,24 @@
 // // console.log(arr)   //[ 2, 5, 6, 2, 3 ]
 
 // ============================ ForEach ========================   TC = O(N)
-// let arr = [ 2, 5, 6, 2, 3 ]
-// let newArr = arr.forEach((e,i, arr)=> {  console.log(e*2,i,arr),console.log(e)}
-         
+// let arr = [2, 5, 6, 2, 3]
+// let newArr = arr.forEach((e, i, arr) => {
+//     console.log(e * 2, i, arr), console.log(e)
+// }
+
 // )
-// console.log(newArr)
+// console.log(newArr, arr)
 
 // ====================== reduce ======================     TC = O(N)
-// const array1 = [1, 2, 3, 4];
+const array1 = [1, 2, 3, 4];
 
-// // 0 + 1 + 2 + 3 + 4
-// const initialValue = 1;
-// const sumWithInitial = array1.reduce(
-//   (previousValue, currentValue) => { console.log(previousValue,currentValue)
-//     return (previousValue * currentValue)
-//   },
-//   initialValue
-// );
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 1;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => { console.log(previousValue,currentValue)
+    return (previousValue * currentValue)
+  },
+  initialValue
+);
 
-// console.log(sumWithInitial,array1);
+console.log(sumWithInitial,array1);
